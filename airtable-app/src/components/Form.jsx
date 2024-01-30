@@ -40,7 +40,8 @@ const Form = () => {
       // Axios request to the backend for checking credentials
      console.log(login)
       const response = await axios.post(
-        "http://localhost:3001/api/check-credentials",
+        //"http://localhost:3001/api/check-credentials"
+        "https://iri-challenge.onrender.com/api/check-credentials",
         {
           login,
         }
@@ -58,7 +59,8 @@ const Form = () => {
       event.preventDefault();
       console.log(studentProgress);
       const response = await axios.post(
-        "http://localhost:3001/api/submit-answers",
+        //"http://localhost:3001/api/submit-answers"
+        "https://iri-challenge.onrender.com/api/submit-answers",
         {
           studentProgress,
         }
